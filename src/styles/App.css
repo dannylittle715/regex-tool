@@ -1,0 +1,53 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #555;
+  padding: 0em 2rem;
+  max-width: 70%;
+}
+
+h2 {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: #333;
+}
+
+p {
+  display: inline-block;
+  text-align: center;
+  margin: 0.5rem 0;
+  padding: 0;
+  max-width: 70%;
+}
+
+hr {
+  margin: 1rem 0 5rem 0;
+}
+
+textarea {
+  font-size: 2rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  resize: none;
+  width: 50%;
+  outline: none;
+  border: 1px solid #555;
+  padding: 5px;
+}

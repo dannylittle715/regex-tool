@@ -1,0 +1,19 @@
+.about .button {
+    padding: .5rem 0;
+    margin: .5rem 0;
+    color: rgb(129, 129, 129);
+    background-color: rgb(228, 227, 227);
+    border: 0.2rem solid rgb(150, 150, 150);
+    border-radius: .6em;
+    font-size: 2rem;
+    text-align: center;
+    width: 40%;
+}
+
+.about .button:hover {
+    color: #555;
+    border-color: #555;
+    background-color: rgb(245, 245, 245);
+}
+
+button:focus { outline:0; }

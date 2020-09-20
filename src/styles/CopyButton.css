@@ -1,0 +1,14 @@
+
+.parent {
+  position: relative;
+}
+
+.copy-button {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.copy-button:hover {
+  color: rgb(251, 142, 45);
+}
