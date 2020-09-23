@@ -24,8 +24,8 @@ const PatternDisplay = ({ pattern }) => {
     <div>
       <h3>Pattern:</h3>
       <pre className='parent'>
-        <FaRegCopy className='copy-button' onClick={onCopyClick}/>
         <code className='language-javascript'>{pattern.toString()}</code>
+        <FaRegCopy className='copy-button' onClick={onCopyClick}/>
       </pre>
     </div>
   );

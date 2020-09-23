@@ -2,9 +2,12 @@ import React, { useState, useRef } from 'react';
 import './../styles/About.css';
 import './../styles/App.css';
 
-const About = (props) => {
+const About = ({ content, title }) => {
   const [active, setActive] = useState(false);
   const buttonRef = useRef(null);
+  if (!title) {
+    title = 'About';
+  }
 
   const handleButtonClick = (e) => {
     e.target.classList.toggle('active');
@@ -14,9 +17,11 @@ const About = (props) => {
   return (
     <div className='about'>
       <button ref={buttonRef} onClick={handleButtonClick} className='button'>
-        About {active ? '-' : '+'}
+        {title} {active ? ' -' : ' +'}
       </button>
-      {active && <p className='content'>{props.content}</p>}
+      <br />
+      {active && content}
+    <hr/>
     </div>
   );
 };

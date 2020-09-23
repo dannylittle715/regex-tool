@@ -11,7 +11,7 @@ const SimpleSection = props => {
             <InputMatch pattern={pattern} placeholder={placeholder}/>
             <PatternDisplay pattern={pattern}/>
             <About content={about} />
-            <hr/>
+
         </div>
     )
 }
