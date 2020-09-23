@@ -13,10 +13,10 @@ const PatternDisplay = ({ pattern }) => {
   const onCopyClick = () => {
       navigator.clipboard.writeText(pattern.toString())
         .then(() =>  {
-            //display success message    
+            //success    
         }, () => {
-            console.log('failed to copy to clipboard.')
-        //display failure message
+          //failure
+          console.log('Failed to copy to clipboard.')
       });
   }
 

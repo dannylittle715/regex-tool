@@ -7,7 +7,7 @@ import './styles/App.css';
 const description = (
   <p className='content'>
     This is a tool to access some regular expression patterns commonly used in
-    data validation. The white button allows you to copy any pattern.
+    data validation. The white button allows you to copy any pattern to your clipboard.
   </p>
 );
 

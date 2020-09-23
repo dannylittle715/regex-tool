@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import InputMatch from './InputMatch';
 import PatternDisplay from './PatternDisplay';
 import About from './About';
-import {usePassword} from '../hooks/usePassword'
+import getPasswordRegex from './getPasswordRegex';
 
 const about = 
 <p className='content'>
@@ -17,11 +17,12 @@ const Password = () => {
   const [minLength, setMinLength] = useState(8);
   const [requireMaxLength, setRequireMaxLength] = useState(false);
   const [maxLength, setMaxLength] = useState(14);
-  const [pattern, setPattern] = usePassword()
+  const [pattern, setPattern] = useState(/^.*$/)
 
   useEffect(() => {
-    setPattern({requireDigits, requireMinLength, requireMaxLength, minLength, maxLength,})
-  }, [requireDigits, requireMinLength, requireMaxLength, minLength, maxLength]);
+      setPattern(getPasswordRegex({requireDigits, requireMinLength, requireMaxLength, minLength, maxLength,}))
+    }, [requireDigits, requireMinLength, requireMaxLength, minLength, maxLength]);
+
 
   return (
     <div>
